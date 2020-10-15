@@ -1,3 +1,4 @@
+// 1. Найдите значение функции
 package praktice1;
 import java.util.Scanner;
 public class exercise1 {
@@ -22,3 +23,44 @@ public class exercise1 {
 		scan.close();
 	}
 }
+
+
+// 2. Вычислить значение выражения по формуле
+package praktice1;
+import java.util.Scanner;
+public class exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner (System.in);
+		String doAgain = "";
+		do {
+			double a, b, c, d, e, f, g, z;
+			System.out.println ("Введите a:");
+			a = scan.nextInt ();
+			System.out.println ("Введите b:");
+			b = scan.nextInt ();
+			System.out.println ("Введите c:");
+			c = scan.nextInt ();
+			d = Math.sqrt(b*b + 4*a*c);
+			//System.out.println ("d = " + d);
+			e = (b + d) / (2 * a);
+			//System.out.println ("e = " + e);
+			f = Math.pow(a, 3) * c;
+			//System.out.println ("f = " + f);
+			g = Math.pow(b, -2);
+			System.out.println ("g = " + g);
+			z = e - f - g;
+			System.out.println ("z = " + z);
+			System.out.println ("Would you like to count a value of 'z' again (y/n)?");
+			doAgain = scan.next ();
+		} while (doAgain.equalsIgnoreCase("y"));
+		System.out.println ("Thank you for using my program! Goodbye.");
+		scan.close();
+	}
+}
+
+// 3. Вычислить значение выражения по формуле
+// 4. Дано действительное число R
+// 5. Дано натуральное число T
+// 6. Для данной области составить линейную программу
