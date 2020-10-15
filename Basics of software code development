@@ -1,0 +1,24 @@
+package praktice1;
+import java.util.Scanner;
+public class exercise1 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		String doAgain = "";
+		do {
+			int a, b, c, z;
+			System.out.println ("Введите a:");
+			a = scan.nextInt ();
+			System.out.println ("Введите b:");
+			b = scan.nextInt ();
+			System.out.println ("Введите c:");
+			c = scan.nextInt ();
+			z = ((a-3) * b/2) + c;
+			System.out.println ("z = " + z);
+			System.out.println ("Would you like to count a value of 'z' again (y/n)?");
+			doAgain = scan.next ();
+		} while (doAgain.equalsIgnoreCase("y"));
+		System.out.println ("Thank you for using my program! Goodbye.");
+		scan.close();
+	}
+}
